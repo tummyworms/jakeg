@@ -147,7 +147,6 @@ export default function Hero() {
               text="JACOB"
               tag="h1"
               className="font-bebas text-[clamp(72px,14vw,200px)] leading-[0.9] tracking-tight text-black block cursor-none"
-              revertStagger={25}
             />
           </motion.div>
 
@@ -156,7 +155,6 @@ export default function Hero() {
               text="GAERTNER"
               tag="h1"
               className="font-bebas text-[clamp(72px,14vw,200px)] leading-[0.9] tracking-tight text-black block cursor-none"
-              revertStagger={20}
             />
           </motion.div>
         </div>
