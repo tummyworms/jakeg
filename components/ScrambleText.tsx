@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 import { useScramble } from "@/hooks/useScramble";
 
 interface ScrambleTextProps {
   text: string;
   className?: string;
-  tag?: keyof JSX.IntrinsicElements;
+  tag?: React.ElementType;
   triggerOnView?: boolean;
   triggerOnMount?: boolean;
   hoverScramble?: boolean;
