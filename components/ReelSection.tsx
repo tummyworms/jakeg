@@ -4,8 +4,8 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
 
-const LATEST_VIMEO_ID = "1076485530";
-const LATEST_VIMEO_HASH = "9a2c7c365e";
+const LATEST_VIMEO_ID = "1186778498";
+const LATEST_VIMEO_HASH = "";
 
 export default function ReelSection() {
   const ref = useRef<HTMLElement>(null);
@@ -57,7 +57,7 @@ export default function ReelSection() {
         className="mb-4"
       >
         <ScrambleText
-          text="IN THE REARVIEW"
+          text="EDITING REEL 2026"
           tag="h3"
           className="font-bebas text-2xl md:text-3xl tracking-wide text-black/70"
           triggerOnView
@@ -65,7 +65,7 @@ export default function ReelSection() {
           staggerMs={28}
         />
         <p className="font-cormorant italic text-black/35 text-sm mt-1">
-          A young couple gets pulled over — their suspicious behavior leads the officer to believe they are hiding something.
+          A showcase of editing work across film and narrative projects.
         </p>
       </motion.div>
 
@@ -88,8 +88,8 @@ export default function ReelSection() {
             data-cursor-expand
           >
             <img
-              src={`https://i.vimeocdn.com/video/2006293042-5c7f78a21289bb580752b77fd9f383993d601f98718df96db7b87bb2a3a633a7-d_640`}
-              alt="In the rearview"
+              src={`https://i.vimeocdn.com/video/2150553168-507ab4ca90bd3d23833fef5dc7bd200b5947e3c231ea0735a13147494c09e9d2-d_640`}
+              alt="Editing Reel 2026"
               className="w-full h-full object-cover"
               style={{ filter: "grayscale(20%) brightness(0.85)" }}
             />
@@ -122,7 +122,7 @@ export default function ReelSection() {
           </button>
         ) : (
           <iframe
-            src={`https://player.vimeo.com/video/${LATEST_VIMEO_ID}?h=${LATEST_VIMEO_HASH}&autoplay=1&title=0&byline=0&portrait=0&color=ffffff`}
+            src={`https://player.vimeo.com/video/${LATEST_VIMEO_ID}?autoplay=1&title=0&byline=0&portrait=0&color=ffffff`}
             className="absolute inset-0 w-full h-full"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen

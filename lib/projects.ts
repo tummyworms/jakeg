@@ -55,4 +55,15 @@ export const projects: Project[] = [
     vimeoId: "781184730",
     thumbnail: "https://i.vimeocdn.com/video/1568075816-6e36fd8b5a6332d91c8bc8bfbe512297a6b108a1de58b512c7c0870ec09f8d2d-d_640",
   },
+  {
+    id: "005",
+    index: "005",
+    title: "EDITING REEL 2026",
+    subtitle: "A showcase of editing work across film and narrative projects.",
+    category: "REEL",
+    year: "2026",
+    span: "full",
+    vimeoId: "1186778498",
+    thumbnail: "https://i.vimeocdn.com/video/2150553168-507ab4ca90bd3d23833fef5dc7bd200b5947e3c231ea0735a13147494c09e9d2-d_640",
+  },
 ];

@@ -7,7 +7,7 @@ import NumberHoverText from "./NumberHoverText";
 
 const socials = [
   { label: "VIMEO", href: "https://vimeo.com/user187552757" },
-  { label: "INSTAGRAM", href: "#" },
+  { label: "INSTAGRAM", href: "https://www.instagram.com/jacobat" },
   { label: "BEHANCE", href: "#" },
 ];
 
@@ -109,7 +109,7 @@ export default function ContactSection() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.7, duration: 0.6 }}
-            className="flex items-center gap-8"
+            className="flex items-center gap-10"
           >
             {socials.map(({ label, href }) => (
               <a
@@ -118,7 +118,7 @@ export default function ContactSection() {
                 target={href !== "#" ? "_blank" : undefined}
                 rel="noopener noreferrer"
                 data-cursor-expand
-                className="font-space text-[10px] tracking-[0.3em] text-black/25 hover:text-black/65 transition-colors duration-300"
+                className="font-space text-sm tracking-[0.2em] text-black/35 hover:text-black transition-colors duration-300"
               >
                 {label}
               </a>

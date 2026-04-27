@@ -56,6 +56,7 @@ export default function WorkGrid() {
 
       {/* Grid */}
       <div className="flex flex-col gap-4">
+        {/* 001 — full */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -64,6 +65,7 @@ export default function WorkGrid() {
           <ProjectCard project={projects[0]} />
         </motion.div>
 
+        {/* 002 + 003 — two column */}
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 gap-4"
           initial={{ opacity: 0, y: 24 }}
@@ -74,12 +76,22 @@ export default function WorkGrid() {
           <ProjectCard project={projects[2]} />
         </motion.div>
 
+        {/* 004 — full */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <ProjectCard project={projects[3]} />
+        </motion.div>
+
+        {/* 005 — full */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+          <ProjectCard project={projects[4]} />
         </motion.div>
       </div>
     </section>
